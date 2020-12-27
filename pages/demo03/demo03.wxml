@@ -1,0 +1,26 @@
+<!--
+text 相当于web中的 span 行内元素
+view 相当于web中的 div 块元素
+-->
+<text>pages/demo03/demo03.wxml</text>
+<text class="" selectable="false" space="false" decode="false">
+    
+</text>
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+    {{msg}}
+</view>
+<view>{{obj.age}}</view>
+<view>{{obj.height}}</view>
+<view>{{obj.width}}</view>
+<view>{{obj.name}}</view>
+
+<!--5 在标签的属性中使用-->
+
+<view data-num="{{obj.name}}">{{obj.name}}</view>
+<!--6 在标签的属性中使用-->
+<view>
+<checkbox  checked="    {{isChecked}}" >
+    
+</checkbox>
+</view>
