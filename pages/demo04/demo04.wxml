@@ -1,0 +1,15 @@
+<view >
+    <input bindinput='input1'/> 
+    <view >
+        {{num1}}
+    </view>
+</view>
+
+<view>
+    <button bindtap = "addOnJ" data-add="{{1}}">
+        +
+    </button>
+    <button bindtap = "addOnJ" data-add="{{-1}}">
+        -
+    </button>
+</view>

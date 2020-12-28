@@ -1,0 +1,7 @@
+<!--pages/demo07/demo07.wxml-->
+<text>wxss使用rpx，引入wxss，使用less，导入less</text>
+
+
+<view class="box1" hover-class="none" hover-stop-propagation="false">
+    
+</view>

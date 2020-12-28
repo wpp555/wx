@@ -20,7 +20,66 @@ view 相当于web中的 div 块元素
 <view data-num="{{obj.name}}">{{obj.name}}</view>
 <!--6 在标签的属性中使用-->
 <view>
-<checkbox  checked="    {{isChecked}}" >
+<checkbox  checked="{{isChecked}}" ></checkbox>
+</view>
+
+<!-- 7运算
+1 可以在花括号中加入 表达式 -- “语句”
+2表达式
+3语句
+-->
+<view>{{1+1}}</view>
+<view>{{"1"+"1"}}</view>
+<view>{{ 11 % 2 === 0 ? '偶数':'奇数' }}</view>
+
+<!-- 8 列表循环
+只有一层循环(wx:for-item="item" wx:for-index="index"可省略)
+9.对象循环
+ wx:for="{{对象}}" 
+ -->
+<view>
+    <view 
+    wx:for="{{list}}" 
+    wx:for-item="item" 
+    wx:for-index="index"
+    wx:key="*this" 
+    >
+        索引： {{index}}
+        ----
+        值：{{item.name}}
+    </view>
+</view>
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <block 
+    wx:for="{{obj}}"
+    wx:for-item="key" wx:for-index="value" 
+    wx:key="age"
+    >
+        属性：{{key}}--
+        属性：{{value}}
+    </block>
     
-</checkbox>
+</view>
+<!--10
+ 1 占位符
+ 2.代码可以看到标签
+ 3 页面渲染 小程序会移除
+-->
+
+<!--11
+wx:if
+hidden
+-->
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <view wx:if="{{!isChecked}}">显示</view>
+    <view wx:elif="{{!isChecked}}">显示2</view>
+    <view wx:else>显示3</view>
+    <view >----------------</view>
+    <view hidden>hidden1</view>
+    <view hidden="{{true}}"  style="display:flex;">hidden2</view>
+    <view hidden="{{false}}">hidden3</view>
+    <view >hidden4</view>
+
 </view>

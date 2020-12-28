@@ -1,28 +1,11 @@
+// pages/demo07/demo07.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg: 'hello wpp',
-    num: 10110,
-    obj: {
-      age: '1',
-      height: '100',
-      width: 200,
-      name: '福伯'
-    }, isChecked: true,
-    list:[
-      {
-        id:0,name:'猪八戒'
-      },
-      {
-        id:1,name:'沙僧'
-      },
-      {
-        id:2,name:'孙悟空'
-      }
-    ]
+
   },
 
   /**
